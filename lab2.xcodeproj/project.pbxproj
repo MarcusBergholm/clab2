@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08D9C9731BCEAFAB0013886C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08D9C9721BCEAFAB0013886C /* main.cpp */; };
+		08142B9A1BCEF87B00AC11CA /* date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08142B991BCEF87B00AC11CA /* date.cpp */; settings = {ASSET_TAGS = (); }; };
+		08142B9D1BCF07F500AC11CA /* baseDate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08142B9B1BCF07F500AC11CA /* baseDate.cpp */; settings = {ASSET_TAGS = (); }; };
+		08142BA01BCF082400AC11CA /* gregorian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08142B9E1BCF082400AC11CA /* gregorian.cpp */; settings = {ASSET_TAGS = (); }; };
+		08142BA31BCF083B00AC11CA /* julian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08142BA11BCF083B00AC11CA /* julian.cpp */; settings = {ASSET_TAGS = (); }; };
+		08142BA51BCFEA6800AC11CA /* datetest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08142BA41BCFEA6800AC11CA /* datetest.cpp */; settings = {ASSET_TAGS = (); }; };
+		082BBBE31BCEB04C004EF13B /* kattistime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 082BBBD31BCEB04C004EF13B /* kattistime.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08142B991BCEF87B00AC11CA /* date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = date.cpp; sourceTree = "<group>"; };
+		08142B9B1BCF07F500AC11CA /* baseDate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseDate.cpp; sourceTree = "<group>"; };
+		08142B9C1BCF07F500AC11CA /* baseDate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = baseDate.hpp; sourceTree = "<group>"; };
+		08142B9E1BCF082400AC11CA /* gregorian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gregorian.cpp; sourceTree = "<group>"; };
+		08142B9F1BCF082400AC11CA /* gregorian.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gregorian.hpp; sourceTree = "<group>"; };
+		08142BA11BCF083B00AC11CA /* julian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = julian.cpp; sourceTree = "<group>"; };
+		08142BA21BCF083B00AC11CA /* julian.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = julian.hpp; sourceTree = "<group>"; };
+		08142BA41BCFEA6800AC11CA /* datetest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = datetest.cpp; sourceTree = "<group>"; };
+		08142BA71BD0260900AC11CA /* calendar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = calendar.hpp; sourceTree = "<group>"; };
+		082BBBD01BCEB04C004EF13B /* date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = date.hpp; sourceTree = "<group>"; };
+		082BBBD31BCEB04C004EF13B /* kattistime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kattistime.cpp; sourceTree = "<group>"; };
+		082BBBD41BCEB04C004EF13B /* kattistime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kattistime.h; sourceTree = "<group>"; };
 		08D9C96F1BCEAFAB0013886C /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab2; sourceTree = BUILT_PRODUCTS_DIR; };
-		08D9C9721BCEAFAB0013886C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +73,18 @@
 		08D9C9711BCEAFAB0013886C /* lab2 */ = {
 			isa = PBXGroup;
 			children = (
-				08D9C9721BCEAFAB0013886C /* main.cpp */,
+				08142BA41BCFEA6800AC11CA /* datetest.cpp */,
+				08142B991BCEF87B00AC11CA /* date.cpp */,
+				082BBBD01BCEB04C004EF13B /* date.hpp */,
+				08142B9B1BCF07F500AC11CA /* baseDate.cpp */,
+				08142B9C1BCF07F500AC11CA /* baseDate.hpp */,
+				08142BA11BCF083B00AC11CA /* julian.cpp */,
+				08142BA21BCF083B00AC11CA /* julian.hpp */,
+				08142B9E1BCF082400AC11CA /* gregorian.cpp */,
+				08142B9F1BCF082400AC11CA /* gregorian.hpp */,
+				082BBBD31BCEB04C004EF13B /* kattistime.cpp */,
+				082BBBD41BCEB04C004EF13B /* kattistime.h */,
+				08142BA71BD0260900AC11CA /* calendar.hpp */,
 			);
 			path = lab2;
 			sourceTree = "<group>";
@@ -118,7 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08D9C9731BCEAFAB0013886C /* main.cpp in Sources */,
+				08142BA01BCF082400AC11CA /* gregorian.cpp in Sources */,
+				082BBBE31BCEB04C004EF13B /* kattistime.cpp in Sources */,
+				08142BA31BCF083B00AC11CA /* julian.cpp in Sources */,
+				08142BA51BCFEA6800AC11CA /* datetest.cpp in Sources */,
+				08142B9D1BCF07F500AC11CA /* baseDate.cpp in Sources */,
+				08142B9A1BCEF87B00AC11CA /* date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +267,7 @@
 				08D9C9781BCEAFAB0013886C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
